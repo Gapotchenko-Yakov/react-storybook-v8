@@ -6,8 +6,12 @@ export default {
   component: Input,
 };
 
-export const SmallInput = () => <Input size="sm" placeholder="sm" />;
+export const Small = () => <Input size="sm" placeholder="sm" />;
 
-export const MediumInput = () => <Input size="md" placeholder="md" />;
+export const Medium = () => <Input size="md" placeholder="md" />;
 
-export const LargeInput = () => <Input size="lg" placeholder="lg" />;
+export const Large = () => <Input size="lg" placeholder="lg" />;
+
+Small.storyName = "Small Input";
+Medium.storyName = "Medium Input";
+Large.storyName = "Large Input";
