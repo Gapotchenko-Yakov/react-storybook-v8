@@ -25,7 +25,9 @@ export const decorators = [
     <ThemeProvider theme={theme}>
       <CSSReset />
       <Box m="4">
-        <Story />
+        <Center>
+          <Story />
+        </Center>
       </Box>
     </ThemeProvider>
   ),
