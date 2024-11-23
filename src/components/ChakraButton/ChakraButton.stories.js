@@ -4,6 +4,17 @@ import React from "react";
 export default {
   title: "Chakra/Button",
   component: Button,
+  argTypes: {
+    variantColor: {
+      control: "color",
+    },
+    children: {
+      control: "text",
+    },
+    onClick: {
+      action: "clicked",
+    },
+  },
 };
 
 const Template = (args) => <Button {...args} />;

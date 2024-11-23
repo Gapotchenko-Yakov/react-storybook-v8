@@ -3,6 +3,7 @@ import { ThemeProvider, theme, CSSReset, Box } from "@chakra-ui/core";
 
 /** @type { import('@storybook/react').Preview } */
 const preview = {
+  tags: ["autodocs"],
   parameters: {
     controls: {
       matchers: {
