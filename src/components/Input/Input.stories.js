@@ -1,5 +1,6 @@
 import React from "react";
 import Input from "./Input";
+import Center from "../Center/Center";
 
 export default {
   title: "components/form/Input",
