@@ -1,5 +1,6 @@
 import Center from "../src/components/Center/Center";
 import { ThemeProvider, theme, CSSReset, Box } from "@chakra-ui/core";
+import { withConsole } from "@storybook/addon-console";
 
 /** @type { import('@storybook/react').Preview } */
 const preview = {
@@ -32,6 +33,7 @@ export const decorators = [
       </Box>
     </ThemeProvider>
   ),
+  (Story, context) => withConsole()(Story)(context),
 ];
 
 export default preview;
