@@ -29,6 +29,7 @@ export const Success = Template.bind({});
 Success.args = {
   variantColor: "green",
   children: "Success",
+  disabled: true,
 };
 
 export const Danger = Template.bind({});

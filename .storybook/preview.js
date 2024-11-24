@@ -1,6 +1,7 @@
 import Center from "../src/components/Center/Center";
 import { ThemeProvider, theme, CSSReset, Box } from "@chakra-ui/core";
 import { withConsole } from "@storybook/addon-console";
+import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
 
 /** @type { import('@storybook/react').Preview } */
 const preview = {
@@ -18,6 +19,26 @@ const preview = {
         a.id === b.id
           ? 0
           : a.id.localeCompare(b.id, undefined, { numeric: true }),
+    },
+    viewport: {
+      viewports: {
+        ...INITIAL_VIEWPORTS,
+        customSmall: {
+          name: "Custom Small Screen",
+          styles: {
+            width: "360px",
+            height: "640px",
+          },
+        },
+        customLarge: {
+          name: "Custom Large Screen",
+          styles: {
+            width: "1280px",
+            height: "1024px",
+          },
+        },
+      },
+      defaultViewport: "customSmall",
     },
   },
 };
