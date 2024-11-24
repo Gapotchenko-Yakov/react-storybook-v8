@@ -4,6 +4,7 @@ import React from "react";
 export default {
   title: "Chakra/Button",
   component: Button,
+  args: { color: "#111111" },
   argTypes: {
     variantColor: {
       control: "color",
@@ -17,7 +18,7 @@ export default {
   },
 };
 
-const Template = (args) => <Button {...args} color="#111111" />;
+const Template = (args) => <Button {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
@@ -40,7 +41,14 @@ Danger.args = {
 
 export const Log = Template.bind({});
 Log.args = {
-  variantColor: "red",
+  variantColor: "purple",
   children: "Log",
   onClick: () => console.log("Button Clicked", process.env.STORYBOOK_THEME),
+};
+
+export const Test = {
+  args: {
+    variantColor: "red",
+    children: "Test",
+  },
 };
