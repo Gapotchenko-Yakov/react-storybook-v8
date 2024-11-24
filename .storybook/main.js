@@ -8,6 +8,7 @@ const config = {
     "@chromatic-com/storybook",
     "@storybook/addon-interactions",
     "@storybook/addon-viewport",
+    "@storybook/addon-a11y"
   ],
   framework: {
     name: "@storybook/react-webpack5",

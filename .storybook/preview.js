@@ -38,7 +38,7 @@ const preview = {
           },
         },
       },
-      defaultViewport: "customSmall",
+      // defaultViewport: "customSmall",
     },
   },
 };

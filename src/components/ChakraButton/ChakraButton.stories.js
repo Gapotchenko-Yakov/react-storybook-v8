@@ -17,7 +17,7 @@ export default {
   },
 };
 
-const Template = (args) => <Button {...args} />;
+const Template = (args) => <Button {...args} color="#111111" />;
 
 export const Primary = Template.bind({});
 Primary.args = {
